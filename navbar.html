@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>navbar</title>
+  <style>
+    /* Basic CSS for navbar */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.login-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid blue;
+  border-radius: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background:black;
+}
+   ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: blue;
+
+      /* background-color: aqua; */
+    }
+    
+    li.nav-item {
+      float: right;
+    }
+    
+    li.nav-item a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li.nav-item a:hover {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <ul class="navbar">
+    <li class="nav-item"><a href="#">Payment</a></li>
+    <li class="nav-item"><a href="#">Services</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Home</a></li>
+  </ul>
+  <div class="container">
+  <form class="login-form">
+    <h2>Registration Form</h2>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Register</button>
+    <p>Have an account? <a href="LOGIN1.HTML">login</a></p>
+  </form>
+</div>
+
+</body>
+</html>
